@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e72d285b-e4ab-4f02-9254-6a6a1a2c9121" name="Changes" comment="if statements, list, tuples, dictionaries">
-      <change afterPath="$PROJECT_DIR$/lesson10.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson11.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson12.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson13.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson14.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson9.py" afterDir="false" />
+    <list default="true" id="e72d285b-e4ab-4f02-9254-6a6a1a2c9121" name="Changes" comment="loops, function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson12.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +70,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.lesson14">
+  <component name="RunManager" selected="Python.lesson12">
     <configuration name="lesson10" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="ENV_FILES" value="" />
@@ -193,9 +188,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.lesson12" />
         <item itemvalue="Python.lesson14" />
         <item itemvalue="Python.lesson13" />
-        <item itemvalue="Python.lesson12" />
         <item itemvalue="Python.lesson10" />
         <item itemvalue="Python.lesson9" />
       </list>
@@ -219,7 +214,8 @@
       <updated>1730093092371</updated>
       <workItem from="1730093094095" duration="6850000" />
       <workItem from="1730179240025" duration="9483000" />
-      <workItem from="1730283023398" duration="13147000" />
+      <workItem from="1730283023398" duration="14329000" />
+      <workItem from="1730499799003" duration="3148000" />
     </task>
     <task id="LOCAL-00001" summary="initial code">
       <option name="closed" value="true" />
@@ -237,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730239957071</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="loops, function">
+      <option name="closed" value="true" />
+      <created>1730358665126</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730358665126</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +250,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial code" />
     <MESSAGE value="if statements, list, tuples, dictionaries" />
-    <option name="LAST_COMMIT_MESSAGE" value="if statements, list, tuples, dictionaries" />
+    <MESSAGE value="loops, function" />
+    <option name="LAST_COMMIT_MESSAGE" value="loops, function" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProject1$python6.coverage" NAME="python6 Coverage Results" MODIFIED="1730183278563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -255,7 +260,7 @@
     <SUITE FILE_PATH="coverage/pythonProject1$lesson5.coverage" NAME="lesson5 Coverage Results" MODIFIED="1730181913538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject1$lesson3.coverage" NAME="lesson3 Coverage Results" MODIFIED="1730096580070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject1$lesson14.coverage" NAME="lesson14 Coverage Results" MODIFIED="1730358385717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonProject1$lesson12.coverage" NAME="lesson12 Coverage Results" MODIFIED="1730356164766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject1$lesson12.coverage" NAME="lesson12 Coverage Results" MODIFIED="1730502930922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject1$lesson10.coverage" NAME="lesson10 Coverage Results" MODIFIED="1730331815187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject1$lesson4.coverage" NAME="lesson4 Coverage Results" MODIFIED="1730097281744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject1$lesson7.coverage" NAME="lesson7 Coverage Results" MODIFIED="1730238142590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
