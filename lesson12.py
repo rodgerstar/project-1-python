@@ -1,5 +1,6 @@
 from datetime import datetime
 
+
 class Account:
     def __init__(self, full_name, acc_num, phone, balance):
         self.full_name = full_name
@@ -10,13 +11,16 @@ class Account:
 
     def deposit(self, amount):
         self.balance += amount
-        print(f"{amount} has been deposited to {self.full_name}'s account successfully. Your balance is {self.balance}")
+        transaction_time = datetime.now().strftime("%d/%m/%Y at %H:%M:%S")
+        print(
+            f"{amount} has been deposited to {self.full_name}'s account successfully on {transaction_time}. Your balance is {self.balance}")
+
         # Record the transaction with date and time
         self.transactions.append({
             "type": "Deposit",
             "amount": amount,
             "balance": self.balance,
-            "datetime": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            "datetime": transaction_time
         })
 
     def withdraw(self, amount):
@@ -24,13 +28,16 @@ class Account:
             print(f"Insufficient funds. Balance is {self.balance}.")
         else:
             self.balance -= amount
-            print(f"{amount} has been withdrawn successfully from account {self.acc_num}. Your balance is {self.balance}.")
+            transaction_time = datetime.now().strftime("%d/%m/%Y at %H:%M:%S")
+            print(
+                f"{amount} has been withdrawn successfully from {self.full_name}'s account on {transaction_time}. Your balance is {self.balance}.")
+
             # Record the transaction with date and time
             self.transactions.append({
                 "type": "Withdrawal",
                 "amount": amount,
                 "balance": self.balance,
-                "datetime": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                "datetime": transaction_time
             })
 
     def transfer(self, amount, target_account):
@@ -39,14 +46,17 @@ class Account:
         else:
             self.balance -= amount
             target_account.balance += amount
-            print(f"{amount} has been transferred from {self.full_name} to {target_account.full_name}. Your new balance is {self.balance}")
+            transaction_time = datetime.now().strftime("%d/%m/%Y at %H:%M:%S")
+            print(
+                f"{amount} has been transferred from {self.full_name} to {target_account.full_name} on {transaction_time}. Your new balance is {self.balance}")
+
             # Record the transaction for sender with date and time
             self.transactions.append({
                 "type": "Transfer Out",
                 "amount": amount,
                 "balance": self.balance,
                 "to": target_account.full_name,
-                "datetime": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                "datetime": transaction_time
             })
             # Record the transaction for recipient with date and time
             target_account.transactions.append({
@@ -54,7 +64,7 @@ class Account:
                 "amount": amount,
                 "balance": target_account.balance,
                 "from": self.full_name,
-                "datetime": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                "datetime": transaction_time
             })
 
     def check_balance(self):
@@ -64,15 +74,14 @@ class Account:
         print(f"Transaction history for {self.full_name}:")
         for transaction in self.transactions:
             if transaction["type"] == "Transfer Out":
-                print(f"{transaction['datetime']}: Transferred {transaction['amount']} to {transaction['to']}. Balance: {transaction['balance']}")
+                print(
+                    f"{transaction['datetime']}: Transferred {transaction['amount']} to {transaction['to']}. Balance: {transaction['balance']}")
             elif transaction["type"] == "Transfer In":
-                print(f"{transaction['datetime']}: Received {transaction['amount']} from {transaction['from']}. Balance: {transaction['balance']}")
+                print(
+                    f"{transaction['datetime']}: Received {transaction['amount']} from {transaction['from']}. Balance: {transaction['balance']}")
             else:
-                print(f"{transaction['datetime']}: {transaction['type']} of {transaction['amount']}. Balance: {transaction['balance']}")
-
-
-
-
+                print(
+                    f"{transaction['datetime']}: {transaction['type']} of {transaction['amount']}. Balance: {transaction['balance']}")
 
 
 kevo_acc = Account("Kevo", "50000", "07000100190", 10000)
@@ -92,3 +101,4 @@ kel_acc.check_balance()
 kel_acc.transfer(12000, kevo_acc)
 kevo_acc.check_balance()
 kel_acc.show_transactions()
+kel_acc.deposit(7000)
