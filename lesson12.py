@@ -56,7 +56,8 @@ class Account:
             target_account.balance += amount
             transaction_time = datetime.now().strftime("%d/%m/%Y at %H:%M:%S")
             print(
-                f"{amount} has been transferred from {self.full_name} to {target_account.full_name} on {transaction_time}. Your new balance is {self.balance}")
+                f"Transfer Successful! You have sent Ksh {amount} to {target_account.full_name} on {transaction_time}. Your new balance is Ksh {self.balance}.")
+
 
             # Record the transaction for sender with date and time
             self.transactions.append({
