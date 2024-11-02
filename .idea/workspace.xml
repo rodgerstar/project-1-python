@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e72d285b-e4ab-4f02-9254-6a6a1a2c9121" name="Changes" comment="added date time to transactions">
+    <list default="true" id="e72d285b-e4ab-4f02-9254-6a6a1a2c9121" name="Changes" comment="(deposit, withdraw, and transfer) using the format day/month/year at (time)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson12.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12.py" afterDir="false" />
     </list>
@@ -215,7 +215,7 @@
       <workItem from="1730093094095" duration="6850000" />
       <workItem from="1730179240025" duration="9483000" />
       <workItem from="1730283023398" duration="14329000" />
-      <workItem from="1730499799003" duration="8614000" />
+      <workItem from="1730499799003" duration="9986000" />
     </task>
     <task id="LOCAL-00001" summary="initial code">
       <option name="closed" value="true" />
@@ -265,7 +265,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730506408594</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="(deposit, withdraw, and transfer) using the format day/month/year at (time)">
+      <option name="closed" value="true" />
+      <created>1730584070074</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730584070074</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +297,8 @@
     <MESSAGE value="banking system, transfer funds from acc to other acc" />
     <MESSAGE value="added a transaction history" />
     <MESSAGE value="added date time to transactions" />
-    <option name="LAST_COMMIT_MESSAGE" value="added date time to transactions" />
+    <MESSAGE value="(deposit, withdraw, and transfer) using the format day/month/year at (time)" />
+    <option name="LAST_COMMIT_MESSAGE" value="(deposit, withdraw, and transfer) using the format day/month/year at (time)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProject1$python6.coverage" NAME="python6 Coverage Results" MODIFIED="1730183278563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -298,7 +307,7 @@
     <SUITE FILE_PATH="coverage/pythonProject1$lesson5.coverage" NAME="lesson5 Coverage Results" MODIFIED="1730181913538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject1$lesson3.coverage" NAME="lesson3 Coverage Results" MODIFIED="1730096580070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject1$lesson14.coverage" NAME="lesson14 Coverage Results" MODIFIED="1730358385717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pythonProject1$lesson12.coverage" NAME="lesson12 Coverage Results" MODIFIED="1730583940998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject1$lesson12.coverage" NAME="lesson12 Coverage Results" MODIFIED="1730585319801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject1$lesson10.coverage" NAME="lesson10 Coverage Results" MODIFIED="1730331815187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject1$lesson4.coverage" NAME="lesson4 Coverage Results" MODIFIED="1730097281744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject1$lesson7.coverage" NAME="lesson7 Coverage Results" MODIFIED="1730238142590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

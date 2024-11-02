@@ -2,11 +2,13 @@ from datetime import datetime
 
 
 class Account:
-    def __init__(self, full_name, acc_num, phone, balance):
+    def __init__(self, full_name, acc_num, phone, balance, pin):
         self.full_name = full_name
         self.acc_num = acc_num
         self.phone = phone
+        self.pin = pin
         self.balance = balance
+
         self.transactions = []  # Initialize an empty list to store transaction history
 
     def deposit(self, amount):
@@ -23,7 +25,10 @@ class Account:
             "datetime": transaction_time
         })
 
-    def withdraw(self, amount):
+    def withdraw(self, amount, pin):
+        if pin != self.pin:
+            print("entered wrong pin")
+            return
         if self.balance < amount:
             print(f"Insufficient funds. Balance is {self.balance}.")
         else:
@@ -40,7 +45,10 @@ class Account:
                 "datetime": transaction_time
             })
 
-    def transfer(self, amount, target_account):
+    def transfer(self, amount, target_account, pin):
+        if pin != self.pin:
+            print("entered wrong pin")
+            return
         if self.balance < amount:
             print(f"Insufficient funds. Balance is {self.balance}.")
         else:
@@ -84,8 +92,8 @@ class Account:
                     f"{transaction['datetime']}: {transaction['type']} of {transaction['amount']}. Balance: {transaction['balance']}")
 
 
-kevo_acc = Account("Kevo", "50000", "07000100190", 10000)
-kel_acc = Account("kel", "4999", "07878700190", 17000)
+kevo_acc = Account("Kevo", "50000", "07000100190", 10000, 1234)
+kel_acc = Account("kel", "4999", "07878700190", 17000, 6789)
 
 
 
@@ -95,10 +103,10 @@ kel_acc = Account("kel", "4999", "07878700190", 17000)
 #kevo_acc.check_balance()
 
 #kel_acc.deposit(5000)
-kevo_acc.transfer(5000, kel_acc)
+kevo_acc.transfer(5000, kel_acc, 1234)
 #kel_acc.check_balance()
-kel_acc.check_balance()
-kel_acc.transfer(12000, kevo_acc)
-kevo_acc.check_balance()
-kel_acc.show_transactions()
-kel_acc.deposit(7000)
+#kel_acc.check_balance()
+#kel_acc.transfer(12000, kevo_acc)
+#kevo_acc.check_balance()
+#kel_acc.show_transactions()
+#kel_acc.deposit(7000)
